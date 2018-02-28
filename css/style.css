@@ -488,7 +488,7 @@ img.img-thumbnail.team-img {
 }
 #contact .text-danger {
 	color: #ff3333;
-	text-align: left;
+	text-align: center;
 }
 label {
 	font-size: 12px;
@@ -497,6 +497,7 @@ label {
 	float: left;
 }
 #contact .form-control {
+    text-align: center;
 	display: block;
 	width: 100%;
 	padding: 6px 12px;
