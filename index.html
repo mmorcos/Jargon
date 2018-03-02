@@ -324,23 +324,7 @@
 <div id="contact" class="text-center">
   <div class="container">
     <div class="section-title center">
-      <h2>Stay in touch!</h2>
-      <hr>
-      <p>Drop your email below to stay up to date with all the latest Jargon courses. We promise not to spam you or sell your email address!</p>
-              <form name="sentMessage" id="contactForm" novalidate>
-        <div class="row">
-          
-          <div class="col-md-6">
-            <div class="form-group">
-              <input type="email" class="form-control" id="email" placeholder="Email" required="required">
-              <p class="help-block text-danger"></p>
-            </div>
-          </div>
-        </div>
-        <div id="success"></div>
-        <button type="submit" class="btn btn-default">Subscribe!</button>
-      </form>
-    </div>
+
       <!--
     <div class="col-md-8 col-md-offset-2">
       <div class="col-md-4">
@@ -364,21 +348,104 @@
       <div class="clearfix"></div>
     </div>
     <div class="col-md-8 col-md-offset-2">
-      <form name="sentMessage" id="contactForm" novalidate>
-        <div class="row">
-          
-          <div class="col-md-6">
-            <div class="form-group">
-              <input type="email" id="email" class="f" placeholder="Email" required="required">
-              <p class="help-block text-danger"></p>
-            </div>
-          </div>
-        </div>
-        <div id="success"></div>
-        <button type="submit" class="btn btn-default">Subscribe!</button>
-      </form>
       <div class="social">
-        <h3>Follow us</h3>
+        <h2>Stay in touch!</h2>
+          <br>
+      <hr>
+      <p>Drop your email below to stay up to date with all the latest Jargon courses. We promise not to spam you or sell your email address!</p>
+        <style>
+        @mixin placeholder {
+  &::-webkit-input-placeholder { @content }
+  &:-moz-placeholder { @content }
+  &::-moz-placeholder { @content }
+  &:-ms-input-placeholder { @content }
+}
+
+
+form {
+  position: relative;
+  margin: 200px auto 50px auto;
+  width: 550px;
+  height: 80px;
+}
+
+input {
+  @include placeholder {
+    color: #fff;
+    text-transform: capitalize;
+  }
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  border: 0;
+  border-radius: 4px;
+  background: #065cb7;
+  outline: 0;
+  padding: 2em 1em 1em 1em;
+  color: #fff;
+  font-size: 1em;
+  transition: background 0.35s ease-out;
+  
+  &:focus {
+    background: #044f9e;
+  }
+  
+  &:focus + label {
+    transform: translateY(-10px) scale(0.8);
+    color: #6da6df;
+    
+    + button {
+      opacity: 1;
+    }
+  }
+}
+
+label {
+  position: absolute;
+  left: 1em;
+  top: 50%;
+  margin-top: -8px;
+  color: #fff;
+  text-transform: capitalize;
+  transform-origin: left center;
+  transition: transform 0.25s ease-out, color 0.25s ease-out;
+}
+
+button {
+  position: absolute;
+  right: 0;
+  width: 120px;
+  height: 100%;
+  border: 0;
+  border-radius: 4px;
+  font-size: 1em;
+  background: #065cb7;
+  color: #044f9e;
+  cursor: pointer;
+  opacity: 0;
+  outline: none;
+  transition: opacity 0.35s ease-out, width 0.5s ease-out, background 0.25s ease-out;
+}
+
+button.is-active {
+  background: #5c94cd;
+  color: #fff;
+}
+
+button.is-done {
+  width: 100%;
+  opacity: 1;
+}
+
+        
+        </style>
+        <form>
+          <input type="email" id="email"/>
+          <label for="email">email address</label>
+          <button id="button">OK</button>
+        </form>
+    </div>
         <ul>
           <li><a href="#"><i class="fa fa-facebook"></i></a></li>
           <li><a href="#"><i class="fa fa-twitter"></i></a></li>
