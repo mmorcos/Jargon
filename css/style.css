@@ -435,7 +435,8 @@ img.img-thumbnail.team-img {
 }
 /* Testimonials Section */
 #testimonials {
-	background: url(../img/testimonials-bg.jpg);
+    
+	background: url(../img/bwbuilding.png);
 	background-size: cover;
 	background-attachment: fixed;
 	color: #ddd;
@@ -521,7 +522,7 @@ label {
 	box-shadow: transparent;
 }
 #contact .btn-default {
-	background: #cf5022;
+	background: #72a8ff;
 	border: 0;
 	border-radius: 4px;
 	padding: 10px 20px;
@@ -531,7 +532,7 @@ label {
 }
 #contact .btn-default:hover, #contact .btn-default:focus {
 	color: #f6f6f6;
-	background: #a13e1a;
+	background: #4c73b2;
 }
 .btn:active, .btn.active {
 	background-image: none;
